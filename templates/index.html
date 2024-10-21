@@ -201,8 +201,8 @@
         formData.append("source", language);
 
         try {
-          // Change this URL to your ALB DNS
-          const response = await fetch("https://6292c68113d142deb7bdecc4d070175d.vfs.cloud9.ap-south-1.amazonaws.com/upload-csv", {
+          // Change this URL to your FastAPI endpoint
+          const response = await fetch("https://8c6e4a2d086143619af72776e05bbc3a.vfs.cloud9.ap-south-1.amazonaws.com/upload-csv/", {
             method: "POST",
             body: formData,
           });
